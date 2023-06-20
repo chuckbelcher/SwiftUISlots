@@ -54,11 +54,9 @@ struct ContentView: View {
                     spin()
                 } label: {
                     Text("Spin")
-                        .fontWeight(.bold)
                         .padding(.horizontal, 50)
                         .padding(.vertical, 18.0)
                         .background(.blue)
-                        .foregroundColor(.white)
                         .cornerRadius(30)
                 }
                 Spacer()
@@ -66,15 +64,15 @@ struct ContentView: View {
                     reset()
                 } label: {
                     Text("Reset")
-                        .fontWeight(.bold)
                         .padding(.horizontal, 50)
                         .padding(.vertical, 18.0)
                         .background(.red)
-                        .foregroundColor(.white)
                         .cornerRadius(30)
                 }
                 Spacer()
             }
+            .foregroundColor(.white)
+            .fontWeight(.bold)
             Spacer()
         }
         .padding()
