@@ -90,8 +90,7 @@ struct ContentView: View {
                 }
                 Spacer()
                 Button {
-                    coins = 100
-                    status = ""
+                    reset()
                 } label: {
                     Text("Reset")
                         .fontWeight(.bold)
@@ -106,6 +105,15 @@ struct ContentView: View {
             Spacer()
         }
         .padding()
+    }
+    
+    func spin() {
+        
+    }
+    
+    func reset() {
+        coins = 100
+        status = ""
     }
 }
 
